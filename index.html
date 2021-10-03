@@ -12,18 +12,19 @@ link (usually <link> is used to link a stylesheet, but since we're not using CSS
 (done)
 
 -->
-
+<title>Minutes of Meeting 1</title>
 <!-- Line below: image link--> <!-- Nest headers into section links to reuse headers-->
 <link rel="icon" 
 type="image/png" 
 href="Favicon/favicon-32x32.png"/>
-</head>
 <meta charset="UTF-8">
-<title>Minutes of Meeting 1</title>
+
   <meta name="description" content="Meeting 1 Minutes">
   <meta name="keywords" content="HTML, minutes, project">
   <meta name="author" content="Eric Filishtiner">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 
   <!-- 
 any miscellaneous comments / questions / concerns that anyone would like to bring up
@@ -38,109 +39,174 @@ video recording of the meeting
     <div>All meeting sections</div>
     <nav>
       <ul>
-        <li class="title"><a href="#">Title</a></li>
-        <li class="topic"><a href="#">Meeting Topic</a></li>
-        <li class="date"><a href="#">Today's Date</a></li>
-        <li class="attended"><a href="#">Attendance List</a></li>
-        <li class="agenda"><a href="#">Meeting Agenda</a></li>
-        <li class="unfinishedPrev"><a href="#">Unfinished Business</a></li>
-        <li class="misc"><a href="#">Miscellaneous Statements</a></li>
-        <li class="pictures"><a href="#">Pictures</a></li>
-        <li class="video"><a href="#">Video</a></li>
+        <li class="title"><a href="#title">Title</a></li>
+        <li class="topic"><a href="#topic">Meeting Topic</a></li>
+        <li class="date"><a href="#date">Today's Date</a></li>
+        <li class="attended"><a href="#attended">Attendance List</a></li>
+        <li class="agenda"><a href="#agenda">Meeting Agenda</a></li>
+        <li class="unfinishedPrev"><a href="#unfinishedPrev">Unfinished Business</a></li>
+        <li class="misc"><a href="#misc">Miscellaneous Statements</a></li>
+        <li class="pictures"><a href="#pictures">Pictures</a></li>
+        <li class="video"><a href="#video">Video</a></li>
         <li class="audio"><a href="#audio">Audio</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-     
-</main>
 
 <!-- nav
 h1, h2, h3
 section 
 
 -->
-<body>
+<main>
  <!--p is paragraph -->
  <p>This is an HTML file representing a meeting. I guess let's say that there are 12 people in my group.
-    Let's say that we finished deciding on the UI and its implementation, that I have developed the 
+    Let's say that we finished deciding on the UI and its implementation, that <br>I have developed the 
     fundamentals of a relational database, that is, the codebase and a few optimizations, though still
-    more need to be made for optimal utility. The manager delegated some tasks to us, and we need to 
-    deploy to the cloud shortly.
-</p>
+    more need to be made for optimal utility. The manager delegated some tasks to us, and <strong>we need to 
+    deploy to the cloud shortly</strong>.
+    <details>
+        <summary>Details</summary>
+        Azure or AWS?
+    </details>
 
-<p>This is another paragraph, just to demonstrate the difference in spacing. Let's say I'm the database 
+
+<p>This is another paragraph, <i>just</i> to demonstrate the difference in spacing. Let's say I'm the database 
     administrator, and we have UX designers, frontend
     and backend engineers, and a manager.
 </p>
 
 <section>
-    <h2>Title</h2>
-    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+    <h1 id = "title">Title</h1>
+    <p><em>This document provides a guide to this meeting of the team.</em></p>
 </section>
-
+<hr>
 <section>
-    <h2>Meeting Topic</h2>
+    <h3 id = "topic">Meeting Topic</h3>
     <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
 </section>
-</body> <!-- : contains the content of the page that is visible to users. -->
+<hr>
 <section>
-    <h2>Today's Date</h2>
+    <h2 id = "date">Today's Date</h2>
     <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
 </section>
-
+<hr>
 <section>
-    <h2>Attendance List</h2>
-    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+    <h2 id = "attended">Attendance List</h2>
+    <ol>
+        <li>Renee Temple</li>
+        <li>Leo Welliver</li>
+        <li>Linda Zelaya</li>
+        <li>Christopher Hill</li>
+        <li>Janet Wiley</li>
+        <li>Carol Lebo</li>
+        <li>Luis Hughes</li>
+        <li>Marcie Altom</li>
+        <li>Matthew Gomez</li>
+        <li>Charlotte Steve</li>
+        <li>William Knapp</li>
+        <li>Robert Longo</li>
+      </ol>
 </section>
-</body> <!-- : contains the content of the page that is visible to users. -->
+<hr>
 <section>
-    <h2>Meeting Agenda</h2>
-    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+    <h2 id = "agenda">Meeting Agenda</h2>
+    <p>This is where an agenda would go..</p>
 </section>
-
+<hr>
 <section>
-    <h2>Unfinished Business</h2>
-    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+    <h2 id = "unfinishedPrev">Unfinished Business</h2>
+    <p>This is where unfinished business would go.</p>
 </section>
+<hr>
 <section>
-    <h2>Miscellaneous Statements</h2>
-    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+    <h2 id = "misc">Miscellaneous Statements</h2>
+    <p>This is where miscellaneous statements would go.</p>
 </section>
-
+<hr>
 <section>
-    <h2>Pictures </h2>
-    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+    <h2 id = "pictures">Pictures </h2>
+    <img src="RelationalDBGeneric.png" alt="Relational Database Example">
 </section>
-</body> <!-- : contains the content of the page that is visible to users. -->
+<hr>
 <section>
-    <h2>Video</h2>
-    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+    <h2 id = "video">Video</h2>
+    <video width="320" height="240" controls>
+        <source src="Video.mp4" type="video/mp4">
+      </video>
 </section>
-
+<hr>
 <section>
-    <h2>Audio</h2>
-    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+    <h2 id ="audio">Audio</h2>
+    <audio controls>
+        <source src="Audio.mp3" type="audio/mpeg">
+      </audio>
 </section>
-</body> <!-- : contains the content of the page that is visible to users. -->
-</body> <!-- : contains the content of the page that is visible to users. -->
+<hr>
+<span>Hello World span</span>
+<hr>
+<div>Hello World div</div>
+</main> <!-- : contains the content of the page that is visible to users. -->
 <footer>
-    <p>Author: Eric Filishtiner</p>
+    <p>Author: <b>Eric Filishtiner</b></p>
     <p><a href="mailto:eric.filishtiner@gmail.com">eric.filishtiner@gmail.com</a></p>
   </footer>
+
+  <form>
+    <fieldset>
+        <legend>Best sports</legend>
+    
+        <input type="radio" id="Tennis" name="Tennis">
+        <label for="Tennis">Tennis</label><br/>
+    
+        <input type="radio" id="Basketball" name="basketball">
+        <label for="Basketball">Basketball</label><br/>
+    
+        <input type="radio" id="Soccer" name="soccer">
+        <label for="Soccer">Soccer</label>
+        <br>
+        <input type="radio" id="Baseball" name="baseball">
+        <label for="Baseball">Baseball</label>
+        <br>
+        <input type="checkbox" id="Pizza" name="Do you like pizza?">
+        <label for="Pizza">Do you like pizza?</label><br/>
+        
+        <input type="date" id="birthday" name="Bday">
+        <label for="birthday">&lt;-Birthday: </label>
+
+        <br>
+        <input type="text" id="Empty" name="Empty">
+        <label for="Empty">&lt;-Enter something!</label>
+
+      </fieldset>
+
+      <textarea id="someID" name="someID" rows="6" cols="50">
+       Enter anything you want to enter here!
+        </textarea>
+
+        <datalist id="ice-cream-flavors">
+            <option value="Chocolate">
+            <option value="Coconut">
+            <option value="Mint">
+            <option value="Strawberry">
+            <option value="Vanilla">
+        </datalist>
+        <br>
+        <select name="Major" id="majors">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Math and Computer Science">Math and Computer Science</option>
+            <option value="Cognitive Science">Cognitive Science</option>
+            <option value="Computer Science - Bioinformatics">Computer Science - Bioinformatics</option>
+          </select>
+          <br>
+          <button type="button">easy!</button>
+    </form>
 </html>
 
-<!-- Content sectioning
 
-Sectioning tags are necessary for your browser to correctly understand the structure of your webpage. Correct webpage sectioning helps in areas like Search Engine Optimization. Note that the way that you section your webpage does NOT have to be exactly how the webpage is structured visually, rather think of your section elements as a guide to your web browser on how your page should be interpreted.
--->
-
-<!-- main -->
-
-<!-- header, footer -->
-
-<!-- nav -->
-
-<!-- h1, h2, h3 -->
-
-<!-- section -->
+<!-- b
+strong (know the differences between b vs. strong)
+i
+em (know the differences between i vs. em)
+a
+br-->
