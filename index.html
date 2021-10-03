@@ -1,43 +1,146 @@
 <!DOCTYPE html> <!--  all HTML documents must start with a document type declaration -->
-<html lang="en"></html> <!-- : the HTML document starts and ends with the <html> element, also known as the root element. 
+<html lang="en"> <!-- : the HTML document starts and ends with the <html> element, also known as the root element. 
     The lang attribute declares the language of the page. -->
-<head></head> <!--  contains the document metadata, which is not displayed to the users. -->
+<head> <!--  contains the document metadata, which is not displayed to the users. -->
 <!-- 
 Document metadata
 Metadata elements are not rendered to your webpage, rather they are used by the browser to provide extra information to 
 your webpage like a title and icon in the browser tab bar or a description of your website
-
-title
-meta
+title(done)
+meta(done)
 link (usually <link> is used to link a stylesheet, but since we're not using CSS, you can use it to link a favicon instead)
+(done)
 
 -->
+
+<!-- Line below: image link--> <!-- Nest headers into section links to reuse headers-->
+<link rel="icon" 
+type="image/png" 
+href="Favicon/favicon-32x32.png"/>
+</head>
 <meta charset="UTF-8">
 <title>Minutes of Meeting 1</title>
   <meta name="description" content="Meeting 1 Minutes">
   <meta name="keywords" content="HTML, minutes, project">
   <meta name="author" content="Eric Filishtiner">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body></body> <!-- : contains the content of the page that is visible to users. -->
 
+  <!-- 
+any miscellaneous comments / questions / concerns that anyone would like to bring up
+pictures of any diagrams / architecture / things that were presented
+SWE meetings often have people diagram things on a whiteboard so we want those captured as well
+For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
+audio recording the meeting
+video recording of the meeting
 
+  -->
+  <header>Sample meeting layout
+    <div>All meeting sections</div>
+    <nav>
+      <ul>
+        <li class="title"><a href="#">Title</a></li>
+        <li class="topic"><a href="#">Meeting Topic</a></li>
+        <li class="date"><a href="#">Today's Date</a></li>
+        <li class="attended"><a href="#">Attendance List</a></li>
+        <li class="agenda"><a href="#">Meeting Agenda</a></li>
+        <li class="unfinishedPrev"><a href="#">Unfinished Business</a></li>
+        <li class="misc"><a href="#">Miscellaneous Statements</a></li>
+        <li class="pictures"><a href="#">Pictures</a></li>
+        <li class="video"><a href="#">Video</a></li>
+        <li class="audio"><a href="#audio">Audio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+     
+</main>
 
+<!-- nav
+h1, h2, h3
+section 
 
-<!-- HTML Basics
-
-HTML files are composed of HTML elements.
-
-HTML elements are composed of 3 parts:
-
-tag: the specifier for which element is being used, enclosed in <> symbols. 
-Header1: <h1></h1>
-Paragraph: <p></p>
-content: the content within an HTML element, can be text content or other HTML tags
-<h1>This is the main header content for my page</h1>
-<ol>    <li>list item</li></ol>
-attributes: used to further differentiate elements from one another/adds additional functionality to an element
-<div class="main-container"></div>
-allows you to select this element by its classname
-<img src="path/to/image.jpg" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
-specifies a path to the image and alternative text if the image cannot be displayed or if a screen reader is used
 -->
+<body>
+ <!--p is paragraph -->
+ <p>This is an HTML file representing a meeting. I guess let's say that there are 12 people in my group.
+    Let's say that we finished deciding on the UI and its implementation, that I have developed the 
+    fundamentals of a relational database, that is, the codebase and a few optimizations, though still
+    more need to be made for optimal utility. The manager delegated some tasks to us, and we need to 
+    deploy to the cloud shortly.
+</p>
+
+<p>This is another paragraph, just to demonstrate the difference in spacing. Let's say I'm the database 
+    administrator, and we have UX designers, frontend
+    and backend engineers, and a manager.
+</p>
+
+<section>
+    <h2>Title</h2>
+    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+    <h2>Meeting Topic</h2>
+    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+</section>
+</body> <!-- : contains the content of the page that is visible to users. -->
+<section>
+    <h2>Today's Date</h2>
+    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+    <h2>Attendance List</h2>
+    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+</section>
+</body> <!-- : contains the content of the page that is visible to users. -->
+<section>
+    <h2>Meeting Agenda</h2>
+    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+    <h2>Unfinished Business</h2>
+    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+</section>
+<section>
+    <h2>Miscellaneous Statements</h2>
+    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+    <h2>Pictures </h2>
+    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+</section>
+</body> <!-- : contains the content of the page that is visible to users. -->
+<section>
+    <h2>Video</h2>
+    <p>This document provides a guide to help with the important task of choosing the correct Apple.</p>
+</section>
+
+<section>
+    <h2>Audio</h2>
+    <p>There are many different criteria to be considered when choosing an Apple — size, color, firmness, sweetness, tartness...</p>
+</section>
+</body> <!-- : contains the content of the page that is visible to users. -->
+</body> <!-- : contains the content of the page that is visible to users. -->
+<footer>
+    <p>Author: Eric Filishtiner</p>
+    <p><a href="mailto:eric.filishtiner@gmail.com">eric.filishtiner@gmail.com</a></p>
+  </footer>
+</html>
+
+<!-- Content sectioning
+
+Sectioning tags are necessary for your browser to correctly understand the structure of your webpage. Correct webpage sectioning helps in areas like Search Engine Optimization. Note that the way that you section your webpage does NOT have to be exactly how the webpage is structured visually, rather think of your section elements as a guide to your web browser on how your page should be interpreted.
+-->
+
+<!-- main -->
+
+<!-- header, footer -->
+
+<!-- nav -->
+
+<!-- h1, h2, h3 -->
+
+<!-- section -->
