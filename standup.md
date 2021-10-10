@@ -6,4 +6,4 @@ What did you do yesterday?
 
 What will you do today? 
 
-Are there any impediments to progress?
+Are there any impediments to progress continuing?
