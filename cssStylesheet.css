@@ -1,0 +1,196 @@
+/* This is a CSS stylesheet intended to style my meeting minutes*/
+
+/* CSS Checklist #1: General CSS Topics */
+/* Elements to integrated to easily distinguish:*/
+
+/* Unit */
+ /* -units of measurement for sizing and spacing your elements */
+/** Use 3 unique relative units total **/ /*DONE*/
+/** Use 3 unique absolute units total **/ /*DONE*/
+
+/* Box Model */
+/* configure the containers that holds your HTML content */
+/* -(“long” and “short” refer to longhand and shorthand syntax and should give the same results. 
+They’re simply different ways to declare your style rules, use at least one of each syntax. 
+You must use both long and short hand notations for each of the following: margin, padding, border) */
+
+/* *Margin* */
+/* -spacing between html elements */
+/*** Long (margin-top, margin-bottom, margin-left, margin-right) ***/ /*DONE*/
+/*** Short (margin: <top> <right> <bottom> <left>) ***/ /*DONE*/
+/*** Auto margins: margin: auto***/ /*TODO*/
+
+/* *Padding* */
+/* -spacing within html elements */
+/*** Long (padding-top, padding-bottom, padding-left, padding-right) ***/ /*DONE*/
+/*** Short (padding: <top> <right> <bottom> <left>) ***/ /*DONE*/
+
+/* *Borders* */
+/* -borders around html elements, hint: apply borders before testing out padding and margin 
+to better understand the difference between the two */
+/*** border-style ***/ /*DONE*/
+/*** border-color ***/ /*DONE*/
+/*** border-width ***/ /*DONE*/
+/*** border-radius ***/ /*DONE*/
+
+/* Text */
+/* -style your text */
+/** color **/ /*DONE*/
+/** text-decoration **/ /*DONE*/
+/** text-align **/ /*DONE*/
+
+/* Display */
+/* -Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page.
+Apply theses values to the display property*/ /*DONE*/
+
+/* Sizing */
+/* -set the height and width for an element */
+/** height **/ /*DONE*/
+/** width **/ /*DONE*/
+/** max-width **/ /*DONE*/
+/** min-width **/ /*DONE*/
+
+/* Position */
+ /* -element positioning on the page */
+/* -2 of the following values: static, relative, fixed, absolute, sticky
+Apply these values to the position property */ /*DONE*/
+
+/* Pseudo-class */
+/* -elements that exist in your document conditionally */
+/** :hover **/ /*DONE*/
+/** :active **/ /*DONE*/
+
+/* Layouts */
+/** Flexbox **/  /* -allow your elements to lay themselves out automatically */
+/* -apply flex to the display property */
+/* -Must have more than two children within the element that is using flexbox. Must use minimum three 
+of the flexbox related attributes */ /*DONE*/
+
+/** Grid **/ /* -instantiate a grid for your layouts */
+/** apply grid to the display property **/
+/* -Must have more than two children within the element that is using the grid. 
+Must use a minimum of three of the grid related attributes */ /*DONE*/
+
+
+/* Responsiveness */
+/* -make your website friendly for multiple devices */
+/** -At least one query based on the screen width
+which is a Media Query **/ /*DONE*/
+
+/* Fonts */
+/* -pick varying font styles to make your text fun to read */
+/* -Include and use a 3rd party font (https://fonts.google.com/ (Links to an external site.)). You can load 
+the font in either your HTML or your CSS */
+
+/*Other 
+/* Color */
+/* -apply colors to your HTML elements */ /*DONE*/
+/** rgb(r, g, b) or rgba(r, g, b, a) **/ /*DONE*/    /* red, green, blue, alpha values */
+header 
+{
+    display:flex;
+    flex-direction:  column;
+    flex-wrap:nowrap;
+    flex-grow:0;
+    background-color: rgba(250, 6, 6, 0.521);
+    font-family: 'Akronim', cursive;
+  
+    color: rgba(255, 115, 0, 0.836);
+  
+  
+    border: 3px solid rgba(245, 241, 6, 0.836)D;
+  
+  
+    padding-bottom: 5px;
+    padding-top: 1mm;
+    padding-left: 3pc;
+    padding-right: 5px;
+    color: green;
+    text-decoration: overline green;
+
+}
+/** #FFF or #FFFFFF **/ /*DONE*/             /* hex codes */
+section {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+
+    background-color: #EAF0F6;
+  
+  
+    color: #2579cc;
+  
+  
+    border: 3px solid #00A4BD;
+  
+  
+    margin-bottom: 5px;
+    margin-top: 1ch;
+    margin-left: 1%;
+    margin-right: 3px;
+  color: purple;
+  text-align: center;
+  }
+
+/** hsl(h, s, l) or hsla(h, s, l, a) **/      /* hue, saturation, lightness, alpha values */
+
+div 
+{
+    position: fixed;
+    display: none; /* I just erased the hello world div from visibility!*/
+    background-color: rgba(171, 224, 22, 0.863);
+  
+  
+    color: rgba(17, 156, 236, 0.829);
+  
+  
+    border: 3px solid rgba(201, 15, 238, 0.877);
+  
+
+    padding: 1em 2em 1em 2em;
+}
+
+
+/** Color name (i.e ‘orange’) **/
+/* Background */
+/* -apply background styles to your elements */
+/** background-color **/
+body {background-color: #ff8800;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2px;
+}
+
+p
+{
+    position: relative;
+    display: block;
+    background-color: #EAF0F6;
+    color: #2579cc;
+    border: 3px solid #00A4BD;
+    margin: 5px 5px 5px 5px;
+
+}
+
+img {
+    border: 5px solid darkblue;
+    height: 300px;
+    width: 200px;
+    max-width: 800px;
+    min-width: 600px;
+  }
+
+  button:hover {
+    color: blue;
+  }
+  button:active{
+  color:red;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    body {
+      background-color: lightblue;
+    }
+  }
