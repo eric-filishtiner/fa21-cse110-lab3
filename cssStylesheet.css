@@ -193,3 +193,69 @@ img {
       background-color: lightblue;
     }
   }
+
+/* 2. CSS Selectors (Links to an external site.) */
+
+/* -CSS selectors allow you to select the HTML element you want to style. Each type of selector targets a different 
+identifier on your HTML element. For this lab you must use at least one of every bulleted selector method. */
+
+/** Class Selector (.class) **/
+
+.HelloWorld {
+    background-color: lime;
+    color: rgb(207, 200, 200);
+    border: 3px solid rgb(238, 121, 11);
+    margin: 15px;
+    padding: 22px;
+  }
+
+/** ID Selector (#id) **/
+#JustThisOne
+{
+    background-color: rgb(132, 0, 255);
+    color: rgb(196, 128, 128);
+    border: 3px solid rgb(11, 238, 189);
+    margin: 15px;
+    padding: 22px;
+}
+/** Universal Selector (*) **/
+* {
+    font-family: 'Akronim', cursive;
+  }
+/** Element Selector (element) **/ /*done implicitly */
+a[href*="mailto"] {
+    font-size: 1em;
+  }
+/** Attribute Selector (e.g. [attribute=foo]) **/  /*DONE*/ 
+/** Pseudo-class Selector (e.g. p:hover) **/ /*DONE IMPLICITLY*/
+/** Selector List (element, element) **/                   /* select multiple elements */
+h1,
+h2, h3 {
+  color: rgb(89, 0, 255); 
+}
+/** Combinators (you must use one of each) **//*DONE*/ /* specify selections based on element positioning in the DOM tree */
+/** Descendant Combinator (element element) **//*DONE*/
+/*Here, changes numbering names into bulleting, in this case*/
+li {
+    list-style-type: disc;
+  }
+/** Child Combinator (element > element) **/ /*DONE*/
+footer > p {
+    background-color: goldenrod;
+  }
+/** General sibling combinator (element ~ element) **/ /*DONE*/
+input ~ label {
+    color: rgb(46, 14, 230);
+
+  }
+
+
+/** Adjacent sibling combinator (element + element) **/ /*DONE*/
+input+label {
+    font-weight: bold;
+  }
+/** Combining Two Selectors (element.class) **/
+span.HelloWorld
+{
+font-weight: bold;
+}
